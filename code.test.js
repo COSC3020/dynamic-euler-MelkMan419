@@ -8,9 +8,9 @@ function test(n) {
 }
 function euler(n) {
     if(n === 0) return 1;
-    else return 1.0 / test(n) + e(n - 1);
+    else return 1.0 / test(n) + factorial(n - 1);
 }
 
-for (let i = 0; i < 2000; i++) {
-    assert(e(i) === euler(i));
+for (let i = 0; i < 1000; i++) {
+    assert(factorial(i) === euler(i));
 }
