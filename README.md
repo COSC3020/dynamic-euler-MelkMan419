@@ -18,3 +18,7 @@ but you need to go beyond that.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
+
+The loop iterates from 1 to `n`, performing constant-time operations in the loop. In each iteration of the loop, there are two main operations, calculating the factorial, which requires multiplying i with the previous value which takes $\Theta$ (1) time and adding the reciprocal of the factorial to the sum which also takes $\Theta$ (1) time.
+
+Since both operations within the loop have a constant time complexity and the loop iterates from 1 to n, the overall worst-case time complexity of the function is $\Theta$ (n).
